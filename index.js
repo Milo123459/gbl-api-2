@@ -13,7 +13,7 @@ require("fs")
     }
   });
 app.get("/", async (req, res) => res.render("index"));
-app.get("/examples/",async(req,res) => res.render("examples"))
+app.get("/examples/", async (req, res) => res.render("examples"));
 app.use(function (req, res) {
   res.status(404);
   res.render("404", {

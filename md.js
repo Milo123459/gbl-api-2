@@ -1,5 +1,5 @@
 var hljs = require("highlight.js"); // https://highlightjs.org/
-const emoji = require('markdown-it-emoji');
+const emoji = require("markdown-it-emoji");
 // Actual default values
 var md = require("markdown-it")({
   highlight: function (str, lang) {
@@ -11,13 +11,13 @@ var md = require("markdown-it")({
 
     return ""; // use external default escaping
   },
-  html: true
+  html: true,
 });
-md.use(emoji,{
+md.use(emoji, {
   shortcuts: {
-    "smile": [":D",":)",":>"]
-  }
-})
+    smile: [":D", ":)", ":>"],
+  },
+});
 require("fs")
   .readdirSync("./")
   .map((f) => {

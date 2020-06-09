@@ -8,12 +8,12 @@
 <pre><code class="language-bash">$ npm i gblapi.js
 </code></pre>
 <p><strong>2. Creating a Glenn Client</strong></p>
-<pre><code class="language-js"><span class="hljs-keyword">const</span> GBL = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gblapi.js'</span>); <span class="hljs-comment">//Require the module, you can use import like so:</span>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> GBL = <span class="hljs-built_in">require</span>(<span class="hljs-string">"gblapi.js"</span>); <span class="hljs-comment">//Require the module, you can use import like so:</span>
 <span class="hljs-comment">//import * as GBL from "gblapi.js"</span>
-<span class="hljs-keyword">const</span> Glenn = <span class="hljs-keyword">new</span> GBL(<span class="hljs-string">'my bot id here'</span>, <span class="hljs-string">'my gbl token here'</span>, <span class="hljs-literal">false</span>); <span class="hljs-comment">//If you set the logs boolean (the one set to false in this example) you will get verbose logging of when your stats are posted.</span>
+<span class="hljs-keyword">const</span> Glenn = <span class="hljs-keyword">new</span> GBL(<span class="hljs-string">"my bot id here"</span>, <span class="hljs-string">"my gbl token here"</span>, <span class="hljs-literal">false</span>); <span class="hljs-comment">//If you set the logs boolean (the one set to false in this example) you will get verbose logging of when your stats are posted.</span>
 </code></pre>
 <p><strong>3. Posting your stats</strong></p>
-<pre><code class="language-js">Glenn.updateStats(client.guilds.cache.size) <span class="hljs-comment">//Warning! Posting a fake server count can result in your bot being taken off the webiste.</span>
+<pre><code class="language-js">Glenn.updateStats(client.guilds.cache.size); <span class="hljs-comment">//Warning! Posting a fake server count can result in your bot being taken off the webiste.</span>
 <span class="hljs-comment">//In this example I'm using Discord.JS and created a client and named it client.</span>
 </code></pre>
 <p>And there we go, we have setup gblapi.js! 🎉</p>
